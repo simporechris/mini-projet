@@ -24,7 +24,7 @@ fonction Calculer_réduction
         Nom du depanneur
           Reçu client
 =================================
-date : 20/10/2025 13:41
+date : 20/10/2025 13:41:10
 biscuit             2.20$
 fromage             3.50$
 jus d'orange        2.80$

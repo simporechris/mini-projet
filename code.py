@@ -32,8 +32,6 @@ produit = {
         "cigarettes": 9.50,
         "polar-pop": 0.99
 }
-for key, value in produit.items():
-    print(f"{key} : {value}$")
 
 
 #todo:faire des reductions pour les produits speciaux
@@ -46,5 +44,7 @@ for key, value in produit.items():
 if __name__ == "__main__":
     print("=="*20)
     print("           Dépanneur GO!  ")
+    print("            Reçu client")
     date = datetime.today()
-    print(date.strftime("%m/%d/%Y, %H:%M:%S"))
+    print(f"date : {(date.strftime("%m/%d/%Y  %H:%M:%S"))}")
+
