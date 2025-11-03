@@ -35,6 +35,19 @@ produit = {
 
 #todo:faire des reductions pour les produits speciaux
 #Todo pour Fred: cree la fonction reduction
+#def reduction_prix(produits_client):
+#   liste_produits_rab = ["biscuit","lait","pain"]
+
+#    rabais_pfixe=[1.60,0.99,0.80]
+#sujet à changements
+
+#    for prod in produits_client:
+#        if prod in liste_produits_rab:
+ #           nouveau_prix = rabais_pfixe[prod]
+ #           produit[prod] = nouveau_prix
+#
+
+ #   return produit
 #todo si on a le temps: vente d'essence
 
 
