@@ -1,11 +1,12 @@
-from pydoc import source_synopsis
+import datetime
+from datetime import *
 
 
 def definir_prix(prix_total):
     nom = produit.keys()
     prix = produit.values()
 
-
+#todo fatoumata:cree pour la fonction pour la taxe
 def calculer_taxe(prix_total, taux_taxe):
     sous_total = float(input("f"))
     tps = sous_total * 0.05
@@ -37,5 +38,12 @@ for key, value in produit.items():
 
 #todo:faire des reductions pour les produits speciaux
 #Todo pour Fred: cree la fonction reduction
-#todo :cree pour la fonction pour la taxe
 #todo si on a le temps: vente d'essence
+
+
+
+
+if __name__ == "__main__":
+    print("=="*20)
+    print("           Dépanneur GO!  ")
+    date = datetime.today()

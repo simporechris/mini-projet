@@ -29,10 +29,10 @@ biscuit             2.20$
 fromage             3.50$
 jus d'orange        2.80$
 --------------------------------
-Sous-Total :        ---$
-Tps : 
-Tvq :
-Total : 
+Sous-Total :        8.50$
+Tps :               0.42$
+Tvq :               0.85$
+Total :             9.77$
 
 
 """
