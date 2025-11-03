@@ -2,17 +2,16 @@ import datetime
 from datetime import *
 
 
-def definir_prix(prix_total):
+def definir_prix(produits_choisi,produit):
     nom = produit.keys()
     prix = produit.values()
 
 #todo fatoumata:cree pour la fonction pour la taxe
-def calculer_taxe(prix_total, taux_taxe):
-    sous_total = float(input("f"))
+def calculer_taxe(sous_total):
     tps = sous_total * 0.05
     tvq = sous_total * 0.099975
     prix_total = sous_total +tps + tvq
-    return prix_total
+    return tps, tvq, prix_total
 
 produit = {
         "eau": 1.20,
@@ -45,16 +44,23 @@ if __name__ == "__main__":
     print("=="*20)
     print("           Dépanneur GO!  ")
     print("            Reçu client")
+    print("     101 Rue Mckenzie,Chibougamau,\n           Québec, G8P 2G6\n            418 654-2121")
+    print("--" * 20)
     date = datetime.today()
     print(f"date : {(date.strftime("%m/%d/%Y  %H:%M:%S"))}")
     produits_choisi = ["lait", "barre chocolatée", "biscuit" ]
     for items in produits_choisi:
         print(f"{items:<20}          {produit[items]: .2f}$")
-    print("--"*20)
+
+    sous_total = definir_prix(produits_choisi,produit)
+    sous_total = sum(produits_choisi,)
+    tps, tvq, prix_total = calculer_taxe(sous_total)
+    print(f"TPS : {tps:<20}$")
 
     print("--" * 10)
     print("Ventes finales sur tous les article du dépaneur GO!")
     print("      Merci de magasiner chez! \n      Passez une belle journée.")
+
 
 
 
