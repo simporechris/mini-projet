@@ -47,9 +47,9 @@ if __name__ == "__main__":
     print("            Reçu client")
     date = datetime.today()
     print(f"date : {(date.strftime("%m/%d/%Y  %H:%M:%S"))}")
-    produits_choisi = ["Lait", "barre chocolatée", "biscuit" ]
+    produits_choisi = ["lait", "barre chocolatée", "biscuit" ]
     for items in produits_choisi:
-        print(f"{items}          {produit}")
+        print(f"{items:<20}          {produit[items]: .2f}$")
 
 
 
