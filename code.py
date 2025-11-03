@@ -48,7 +48,8 @@ if __name__ == "__main__":
     date = datetime.today()
     print(f"date : {(date.strftime("%m/%d/%Y  %H:%M:%S"))}")
     produits_choisi = ["Lait", "barre chocolatée", "biscuit" ]
-
+    for items in produits_choisi:
+        print(f"{items}          {produit}")
 
 
 
