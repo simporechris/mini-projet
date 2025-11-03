@@ -50,9 +50,7 @@ if __name__ == "__main__":
     produits_choisi = ["lait", "barre chocolatée", "biscuit" ]
     for items in produits_choisi:
         print(f"{items:<20}          {produit[items]: .2f}$")
-
-
-
-
     print("--"*20)
+
+
 
