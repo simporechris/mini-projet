@@ -60,8 +60,8 @@ if __name__ == "__main__":
     print("--" * 10)
     print("Ventes finales sur tous les article du dépaneur GO!\n ")
 
-    print("      Merci de magasiner chez! \n      Passez une belle journée.") f
-lq«
+    print("      Merci de magasiner chez! \n      Passez une belle journée.")
+
 
 
 
