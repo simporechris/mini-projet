@@ -4,7 +4,10 @@ fonction definir_prix
 creation dictionnaire de produit et des prix
 
 
-fonction Calculer_réduction
+fonction Calculer_réduction(produits_client)
+"""
+"""
+
     creation de condition
 
 
@@ -36,7 +39,6 @@ Tvq :               0.85$
 Total :             9.77$
 
 Ventes finales sur tous les article du dépaneur GO!
-
 
 
 
