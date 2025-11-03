@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
     print("--" * 10)
     print("Ventes finales sur tous les article du dépaneur GO!")
-    print("      Merci de magasiner chez! \n      Passez une belle journée.")
+    print("      Merci de magasiner chez! \n      Passez une belle journée.") f
 
 
 
