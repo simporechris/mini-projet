@@ -1,6 +1,16 @@
+from pydoc import source_synopsis
+
+
 def definir_prix(prix_total):
         for key, value in produit.items():
                 prix_total = key * value
+
+def calculer_taxe(prix_total, taux_taxe):
+    sous_total = float(input("f"))
+    tps = sous_total * 0.05
+    tvq = sous_total * 0.099975
+    prix_total = sous_total +tps + tvq
+    return prix_total
 
 produit = {
         "eau": 1.20,
