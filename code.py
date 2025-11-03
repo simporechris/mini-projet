@@ -2,8 +2,9 @@ from pydoc import source_synopsis
 
 
 def definir_prix(prix_total):
-        for key, value in produit.items():
-                prix_total = key * value
+    nom = produit.keys()
+    prix = produit.values()
+
 
 def calculer_taxe(prix_total, taux_taxe):
     sous_total = float(input("f"))
@@ -30,13 +31,11 @@ produit = {
         "cigarettes": 9.50,
         "polar-pop": 0.99
 }
-nom = produit.keys()
-prix = produit.values()
 for key, value in produit.items():
-        print(f"{key} : {value}$")
-prix = definir_prix()
+    print(f"{key} : {value}$")
+
 
 #todo:faire des reductions pour les produits speciaux
 #Todo pour Fred: cree la fonction reduction
-#todo pour fatoumata:cree pour la fonction pour la taxe
+#todo :cree pour la fonction pour la taxe
 #todo si on a le temps: vente d'essence
