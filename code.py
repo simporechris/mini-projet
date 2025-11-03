@@ -52,5 +52,8 @@ if __name__ == "__main__":
         print(f"{items:<20}          {produit[items]: .2f}$")
     print("--"*20)
 
+    print("--" * 10)
+    print("Ventes finales sur tous les article du dépaneur GO!")
+
 
 
