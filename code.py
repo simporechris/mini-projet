@@ -60,7 +60,7 @@ if __name__ == "__main__":
     print("     101 Rue Mckenzie,Chibougamau,\n           Québec, G8P 2G6\n            418 654-2121")
     print("--" * 20)
     date = datetime.today()
-    print(f"date : {(date.strftime("%m/%d/%Y  %H:%M:%S"))}\n ")
+    print(f"date : {date.strftime('%m/%d/%Y, %H:%M:%S')}")
     produits_choisi = ["lait", "barre chocolatée", "biscuit" ]
     for items in produits_choisi:
         print(f"{items:<20}          {produit[items]: .2f}$")
@@ -73,7 +73,7 @@ if __name__ == "__main__":
     print("--" * 10)
     print("Ventes finales sur tous les article du dépaneur GO!\n ")
 
-    print("      Merci de magasiner chez! \n      Passez une belle journée.") f
+    print("      Merci de magasiner chez! \n      Passez une belle journée.")
 
 
 

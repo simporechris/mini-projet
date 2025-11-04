@@ -5,9 +5,6 @@ creation dictionnaire de produit et des prix
 
 
 fonction Calculer_réduction(produits_client)
-"""
-"""
-
     creation de condition
 
 
@@ -18,9 +15,7 @@ fonction Calculer_réduction(produits_client)
 
 
 
-
 """
-
 
 """EXEMPLE D'EXECUTION
 =================================        
@@ -40,7 +35,8 @@ Total :             9.77$
 
 Ventes finales sur tous les article du dépaneur GO!
 
-
+        Merci d'avooir magasiner chez nous!
+        Passer une belle journée.
 
 
 """
