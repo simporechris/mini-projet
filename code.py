@@ -5,14 +5,6 @@ from datetime import *
 def definir_prix(produits_choisi,produit):
     nom = produit.keys()
     prix = produit.values()
-
-#todo fatoumata:cree pour la fonction pour la taxe
-def calculer_taxe(sous_total):
-    tps = sous_total * 0.05
-    tvq = sous_total * 0.099975
-    prix_total = sous_total +tps + tvq
-    return tps, tvq, prix_total
-
 produit = {
         "eau": 1.20,
         "coca-cola": 2.50,
@@ -31,11 +23,19 @@ produit = {
         "cigarettes": 9.50,
         "polar-pop": 0.99
 }
+#todo fatoumata:cree pour la fonction pour la taxe
+def calculer_taxe(sous_total):
+    tps = sous_total * 0.05
+    tvq = sous_total * 0.099975
+    prix_total = sous_total +tps + tvq
+    return tps, tvq, prix_total
+
+
 
 
 #todo:faire des reductions pour les produits speciaux
 #Todo pour Fred: cree la fonction reduction
-#def reduction_prix(produits_client):
+#def calculer_reduction(produits_client):
 #   liste_produits_rab = ["biscuit","lait","pain"]
 
 #    rabais_pfixe=[1.60,0.99,0.80]
