@@ -1,6 +1,6 @@
 """
 fonction definir_prix
-    prix total = nombre de produit * le prix
+
 creation dictionnaire de produit et des prix
 
 
@@ -9,7 +9,7 @@ fonction Calculer_réduction(produits_client)
 
 
 
-
+progra
 
 
 

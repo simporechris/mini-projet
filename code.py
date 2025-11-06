@@ -2,8 +2,15 @@ import datetime
 from datetime import *
 
 
-def definir_prix(produits_choisi,produit):
-    nom = produit.keys()
+def definir_prix(produits_choisi,nom_produit):  #Chris
+    """
+    fonction pour calculer le sous total
+    :param produits_choisi: les produits choisis par le clients
+    :param nom_produit:
+    :param prix:
+    :return:
+    """
+    nom_produit = produit.keys()
     prix = produit.values()
 produit = {
         "eau": 1.20,
@@ -53,7 +60,7 @@ def calculer_taxe(sous_total):
 
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": #chris et fatoumata
     print("=="*20)
     print("           Dépanneur GO!  ")
     print("            Reçu client\n")
@@ -62,13 +69,34 @@ if __name__ == "__main__":
     date = datetime.today()
     print(f"date : {date.strftime('%m/%d/%Y, %H:%M:%S')}")
     produits_choisi = ["lait", "barre chocolatée", "biscuit" ]
+    ls_prix = []
     for items in produits_choisi:
+        ls_prix.append(produit[items])
         print(f"{items:<20}          {produit[items]: .2f}$")
 
-    """sous_total = definir_prix(produits_choisi,produit)
-    sous_total = sum(produits_choisi,)
+        #sous_total = print(f"{produit[items}
+
+    print("--" * 10)
+    sous_total = definir_prix(produits_choisi,produit)
+    sous_total = sum(ls_prix)
+    print(f"Sous-total :{sous_total:>23.2f}$")
     tps, tvq, prix_total = calculer_taxe(sous_total)
-    print(f"TPS : {tps:<20}$")"""
+    print(f"TPS : {tps:>29.2f}$")
+    print(f"TVQ : {tvq:>29.2f}$")
+    print(f"Total : {prix_total:>27.2f}$")
+    print("--" * 20)
+    nb_article= len(produits_choisi)
+    print(f"Nombre total d'articles: {nb_article}")
+    # sous_total = definir_prix(produits_choisi, produit)
+    # for produit in produits_choisi:
+    # produit{produits_choisi}=
+        #sous_total = produits_choisi.values()
+    #tps, tvq, total = calculer_taxe(sous_total)
+    # afficher reçu
+    #print(f"Sous-total :{sous_total:>20}$ ")
+
+    #afficher reçu
+
 
     print("--" * 10)
     print("Ventes finales sur tous les article du dépaneur GO!\n ")
