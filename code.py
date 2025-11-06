@@ -31,7 +31,7 @@ produit = {
         "polar-pop": 0.99
 }
 #todo fatoumata:cree pour la fonction pour la taxe
-def calculer_taxe(sous_total):
+def calculer_taxe(sous_total): #fatoumata
     tps = sous_total * 0.05
     tvq = sous_total * 0.099975
     prix_total = sous_total +tps + tvq
@@ -42,6 +42,7 @@ def calculer_taxe(sous_total):
 
 #todo:faire des reductions pour les produits speciaux
 #Todo pour Fred: cree la fonction reduction
+#Fred
 #def calculer_reduction(produits_client):
 #   liste_produits_rab = ["biscuit","lait","pain"]
 
@@ -51,10 +52,10 @@ def calculer_taxe(sous_total):
 #    for prod in produits_client:
 #        if prod in liste_produits_rab:
  #           nouveau_prix = rabais_pfixe[prod]
- #           produit[prod] = nouveau_prix
+ #           ls_prix[prod] = nouveau_prix
 #
 
- #   return produit
+ #   return ls_prix
 #todo si on a le temps: vente d'essence
 
 
@@ -98,8 +99,8 @@ if __name__ == "__main__": #chris et fatoumata
     #afficher reçu
 
 
-    print("--" * 10)
-    print("Ventes finales sur tous les article du dépaneur GO!\n ")
+    print("--" * 20)
+    print("Ventes finales sur tous les articles\n ")
 
     print("      Merci de magasiner chez! \n      Passez une belle journée.")
 

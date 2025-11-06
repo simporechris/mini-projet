@@ -5,7 +5,26 @@ creation dictionnaire de produit et des prix
 
 
 fonction Calculer_réduction(produits_client)
-    creation de condition
+#Fred
+def calculer_reduction(produits_client):
+
+liste_produits_rab:liste des produits dans le circulaire de rabais accessible aux clients
+
+   liste_produits_rab = ["biscuit","lait","pain"]
+
+rabais_pfixe:liste de prix réduits pour les cirulaires qui vont remplacer les prix initiaux
+
+   rabais_pfixe=[1.60,0.99,0.80]
+
+sujet à changements
+
+    pour chaque prod dans produits_client:
+       si prod dans liste_produits_rab:
+          nouveau_prix = rabais_pfixe[prod]
+           ls_prix[prod] = nouveau_prix
+
+
+   retourner ls_prix
 
 
 
