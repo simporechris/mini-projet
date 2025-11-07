@@ -69,7 +69,7 @@ if __name__ == "__main__": #chris et fatoumata
     print("--" * 20)
     date = datetime.today()
     print(f"date : {date.strftime('%m/%d/%Y, %H:%M:%S')}")
-    produits_choisi = ["lait", "barre chocolatée", "biscuit" ]
+    produits_choisi = ["biscuit", "fromage", "jus d'orange" ]
     ls_prix = []
     for items in produits_choisi:
         ls_prix.append(produit[items])
@@ -102,7 +102,7 @@ if __name__ == "__main__": #chris et fatoumata
     print("--" * 20)
     print("Ventes finales sur tous les articles\n ")
 
-    print("      Merci de magasiner chez! \n      Passez une belle journée.")
+    print("      Merci de magasiner chez nous! \n        Passez une belle journée.")
 
 
 

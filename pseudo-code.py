@@ -46,16 +46,18 @@ date : 20/10/2025 13:41:10
 biscuit             2.20$
 fromage             3.50$
 jus d'orange        2.80$
---------------------------------
+----------------
 Sous-Total :        8.50$
-Tps :               0.42$
+Tps :               0.43$
 Tvq :               0.85$
 Total :             9.77$
-
-Ventes finales sur tous les article du dépaneur GO!
+----------------------------------------
+Nombre total d'articles: 3
+----------------------------------------
+Ventes finales sur tous les articles
 
         Merci d'avooir magasiner chez nous!
-        Passer une belle journée.
+            Passer une belle journée.
 
 
 """
