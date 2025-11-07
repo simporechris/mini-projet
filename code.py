@@ -88,13 +88,6 @@ if __name__ == "__main__": #chris et fatoumata
     print("--" * 20)
     nb_article= len(produits_choisi)
     print(f"Nombre total d'articles: {nb_article}")
-    # sous_total = definir_prix(produits_choisi, produit)
-    # for produit in produits_choisi:
-    # produit{produits_choisi}=
-        #sous_total = produits_choisi.values()
-    #tps, tvq, total = calculer_taxe(sous_total)
-    # afficher reçu
-    #print(f"Sous-total :{sous_total:>20}$ ")
 
     #afficher reçu
 
