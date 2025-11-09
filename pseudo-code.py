@@ -1,6 +1,8 @@
 """
 fonction definir_prix
-
+    nom_produit = produit.keys()
+    prix = produit.values()
+    return None
 creation dictionnaire de produit et des prix
 
 

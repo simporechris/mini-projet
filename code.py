@@ -8,10 +8,11 @@ def definir_prix(produits_choisi,nom_produit):  #Chris
     :param produits_choisi: les produits choisis par le clients
     :param nom_produit:
     :param prix:
-    :return:
+    :return: None
     """
     nom_produit = produit.keys()
     prix = produit.values()
+    return None
 produit = {
         "eau": 1.20,
         "coca-cola": 2.50,
@@ -31,7 +32,12 @@ produit = {
         "polar-pop": 0.99
 }
 #todo fatoumata:cree pour la fonction pour la taxe
-def calculer_taxe(sous_total): #fatoumata
+def calculer_taxe(sous_total):#fatoumata
+    """
+    fonction pour calculer les taxes après le sous total
+    :param sous_total: le sous total est le prix total avant les taxes
+    :return: le tps, le tvq et le prix total de la facture
+    """
     tps = sous_total * 0.05
     tvq = sous_total * 0.099975
     prix_total = sous_total +tps + tvq
@@ -75,7 +81,6 @@ if __name__ == "__main__": #chris et fatoumata
         ls_prix.append(produit[items])
         print(f"{items:<20}          {produit[items]: .2f}$")
 
-        #sous_total = print(f"{produit[items}
 
     print("--" * 10)
     sous_total = definir_prix(produits_choisi,produit)
