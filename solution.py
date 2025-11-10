@@ -32,7 +32,7 @@ produit = {
         "polar-pop": 0.99
 }
 #todo fatoumata:cree pour la fonction pour la taxe
-def calculer_taxe(sous_total):#fatoumata
+def calculer_taxe(sous_total,produits_choisi):#fatoumata
     """
     fonction pour calculer les taxes après le sous total
     :param sous_total: le sous total est le prix total avant les taxes
