@@ -38,6 +38,22 @@ def calculer_taxe(sous_total):#fatoumata
     :param sous_total: le sous total est le prix total avant les taxes
     :return: le tps, le tvq et le prix total de la facture
     """
+    """
+    fonction calculer_taxe
+    Entrées : 
+            sous_total (montant avant taxe)
+    Sorties :
+            tps
+            tvq
+            total
+    Début :
+            tps : sous_total * 0.05
+            tvq : sous_total * 0.099975
+            total : sous_total + tvq + tps
+            
+            retourner tps, tvq, total
+    Fin
+    """
     tps = sous_total * 0.05
     tvq = sous_total * 0.099975
     prix_total = sous_total +tps + tvq
