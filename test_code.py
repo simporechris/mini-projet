@@ -11,4 +11,5 @@ def test_code1(produits_choisi,sous_total,resultat_attendu):
     #Act
     resultat = calculer_taxe(sous_total,produits_choisi)
     #Assert
+    assert isinstance(resultat, float)
     assert resultat == resultat_attendu
