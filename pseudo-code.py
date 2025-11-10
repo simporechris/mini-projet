@@ -6,6 +6,13 @@ fonction definir_prix
 creation dictionnaire de produit et des prix
 
 
+fonction calculer_taxe
+    calculer le tps
+    calculer le tvq
+    calculer le prix total
+    retourner tps, tvq, prix_total
+
+
 fonction Calculer_réduction(produits_client)
 #Fred
 def calculer_reduction(produits_client):
