@@ -95,13 +95,13 @@ if __name__ == "__main__": #chris et fatoumata
     nb_article= len(produits_choisi)
     print(f"Nombre total d'articles: {nb_article}")
 
+
+
     #afficher reçu
-
-
     print("--" * 20)
     print("Ventes finales sur tous les articles\n ")
 
-    print("      Merci de magasiner chez nous! \n        Passez une belle journée.")
+    print("   Merci de magasiner chez nous! \n     Passez une belle journée.")
 
 
 

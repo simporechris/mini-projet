@@ -1,8 +1,8 @@
 """
 fonction definir_prix
-    nom_produit = produit.keys()
-    prix = produit.values()
-    return None
+    définir nom du produit
+    définir le prix
+    rétouner None
 creation dictionnaire de produit et des prix
 
 
@@ -45,7 +45,8 @@ programme principal
 
 """
 
-"""EXEMPLE D'EXECUTION
+"""
+    EXEMPLE D'EXECUTION
 =================================        
         Nom du depanneur
           Reçu client
@@ -65,8 +66,8 @@ Nombre total d'articles: 3
 ----------------------------------------
 Ventes finales sur tous les articles
 
-        Merci d'avooir magasiner chez nous!
-            Passer une belle journée.
+    Merci d'avooir magasiner chez nous!
+        Passer une belle journée.
 
 
 """
