@@ -39,8 +39,8 @@ def calculer_taxe(sous_total,produits_choisi):#fatoumata
     :return: le tps, le tvq et le prix total de la facture
     """
 
-    tps = sous_total * 0.05
-    tvq = sous_total * 0.099975
+    tps = round(sous_total * 0.05,2)
+    tvq = round(sous_total * 0.099975,2)
     prix_total = sous_total +tps + tvq
     return tps, tvq, prix_total
 
