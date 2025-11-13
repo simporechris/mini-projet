@@ -21,3 +21,4 @@ def test_solution2(produits_choisi,sous_total,resultat_attendu):
     resultat = calculer_taxe(sous_total,produits_choisi)
     #Assert
     assert resultat == resultat_attendu
+
