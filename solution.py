@@ -50,19 +50,18 @@ def calculer_taxe(sous_total,produits_choisi):#fatoumata
 #todo:faire des reductions pour les produits speciaux
 #Todo pour Fred: cree la fonction reduction
 #Fred
-#def calculer_reduction(produits_client):
-#   liste_produits_rab = ["biscuit","lait","pain"]
+def calculer_reduction(produits_client):
+    liste_produits_rab = ["biscuit","lait","pain"]
 
-#    rabais_pfixe=[1.60,0.99,0.80]
+    rabais_pfixe=[1.60,0.99,0.80]
 #sujet à changements
 
-#    for prod in produits_client:
-#        if prod in liste_produits_rab:
- #           nouveau_prix = rabais_pfixe[prod]
- #           ls_prix[prod] = nouveau_prix
-#
+    for prod in produits_client:
+        if prod in liste_produits_rab:
+            nouveau_prix = rabais_pfixe[prod]
+            ls_prix[prod] = nouveau_prix
 
- #   return ls_prix
+            return ls_prix
 #todo si on a le temps: vente d'essence
 
 
