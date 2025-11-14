@@ -76,13 +76,7 @@ if __name__ == "__main__": #chris et fatoumata
         if item == "ok":
             break
         produits_choisi.append(item)
-    ls_prix = []
-    try:
-        for items in produits_choisi:
-            ls_prix.append(produit[items])
-            print(f"{items:<20}          {produit[items]: .2f}$")
-    except KeyError:
-        print("Ces articles sont indisponibles")
+
     print("=="*20)
     print("           Dépanneur GO!  ")
     print("            Reçu client\n")
@@ -91,12 +85,17 @@ if __name__ == "__main__": #chris et fatoumata
     date = datetime.today()
     print(f"date : {date.strftime('%m/%d/%Y, %H:%M:%S')}")
 
-
-
+    ls_prix = []
+    try:
+        for items in produits_choisi:
+            ls_prix.append(produit[items])
+            print(f"{items:<20}          {produit[items]: .2f}$")
+    except KeyError:
+        print("Ces articles sont indisponibles")
 
     print("--" * 10)
-    sous_total = definir_prix(produits_choisi,produit)
-    #calculer_reduction(produits_choisi,ls_prix)
+    sous_total = definir_prix(produits_choisi, produit)
+    # calculer_reduction(produits_choisi,ls_prix)
     sous_total = sum(ls_prix)
     print(f"Sous-total :{sous_total:>23.2f}$")
     tps, tvq, prix_total = calculer_taxe(sous_total,produits_choisi)
