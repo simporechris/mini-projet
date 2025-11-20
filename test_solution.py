@@ -22,6 +22,7 @@ def test_solution2(produits_choisi,sous_total,resultat_attendu):
     #Assert
     assert resultat == resultat_attendu
 
+#chris
 @pytest.mark.parametrize("produits_choisi, produit_supprimer,resultat_attendu", [
     (["pain","fromage","chips"],"chips",["pain","fromage"])
 ])
