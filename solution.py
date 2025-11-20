@@ -67,7 +67,7 @@ def calculer_reduction(produits_client, produits_disponibles):
             produits_avec_reduc[prod] = rabais_pfixe[i]
     return produits_avec_reduc
 
-def supprimer_produit(produits_choisi): #chris
+def supprimer_produit(produits_choisi,produit_supprimer): #chris
     while True:
         item = input("* ").lower()
         if item == "":
@@ -79,7 +79,7 @@ def supprimer_produit(produits_choisi): #chris
         else:
             print(f"{item} cela ne fait pas partie de vos produits")
 
-
+    return tps,tvq,prix_total
 
 if __name__ == "__main__":  # chris et fatoumata
     produits_choisi = []
@@ -89,9 +89,9 @@ if __name__ == "__main__":  # chris et fatoumata
         if item == "":
             break
         produits_choisi.append(item)
-
+    produit_supprimer = item
     print("Écrivez le nom du produit à supprimer ou taper 'Entrer' pour terminer")
-    supprimer_produit(produits_choisi)
+    supprimer_produit(produits_choisi,produit_supprimer)
 
 
     print("=="*20)
@@ -100,7 +100,7 @@ if __name__ == "__main__":  # chris et fatoumata
     print("     101 Rue Mckenzie,Chibougamau,\n           Québec, G8P 2G6\n            418 654-2121")
     print("--" * 20)
     date = datetime.today()
-    print(f"date : {date.strftime('%m/%d/%Y, %H:%M:%S')}")
+    print(f"date : {date.strftime('%d/%m/%Y, %H:%M:%S')}")
 
     ls_prix = []
     try:
