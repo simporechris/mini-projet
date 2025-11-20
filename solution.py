@@ -6,8 +6,8 @@ def definir_prix(produits_choisi, nom_produit):  #Chris
     """
     fonction pour calculer le sous total
     :param produits_choisi: les produits choisis par le clients
-    :param nom_produit:
-    :param prix:
+    :param nom_produit: Les noms de produits
+    :param prix: Le prix de chaque produit
     :return: None
     """
     nom_produit = produit.keys()
@@ -63,19 +63,31 @@ def calculer_reduction(produits_client, produits_disponibles):
             produits_avec_reduc[prod] = rabais_pfixe[i]
     return produits_avec_reduc
 
+def supprime_produit(produits_choisi):
+    item = input("* ")
+    if item == "supprimer":
+        element = produits_choisi(item)
+        del produits_choisi [element]
+    else:
+        item = ""
 
+        break
 
 
 
 
 if __name__ == "__main__": #chris et fatoumata
     produits_choisi = []
-    print("Entrez vos produits (Taper 'Entrer' pour terminer)")
+    print("Entrez vos produits (Taper 'Entrer' pour terminer")
     while True:
         item = input("- ")
         if item == "":
             break
         produits_choisi.append(item)
+
+    print("Écrivez'supprimer' pour supprimer les produits")
+    supprime_produit(produits_choisi)
+
 
     print("=="*20)
     print("           Dépanneur GO!  ")
@@ -91,7 +103,7 @@ if __name__ == "__main__": #chris et fatoumata
             ls_prix.append(produit[items])
             print(f"{items:<20}          {produit[items]: .2f}$")
     except KeyError:
-        print("Ce produit n'existe pas")
+        print(f" {items} n'existe pas dans notre dépanneur")
 
     print("--" * 10)
     sous_total = definir_prix(produits_choisi, produit)
