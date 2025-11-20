@@ -107,7 +107,7 @@ if __name__ == "__main__": #chris et fatoumata
 
     print("--" * 10)
     sous_total = definir_prix(produits_choisi, produit)
-    # calculer_reduction(produits_choisi,ls_prix)
+    calculer_reduction(produits_choisi,ls_prix)
     sous_total = sum(ls_prix)
     print(f"Sous-total :{sous_total:>23.2f}$")
     tps, tvq, prix_total = calculer_taxe(sous_total,produits_choisi)
