@@ -70,6 +70,7 @@ def calculer_reduction(produits_client, produits_disponibles):
 def supprimer_produit(produits_choisi,produit_supprimer): #chris
     while True:
         item = input("* ").lower()
+        produit_supprimer == item
         if item == "":
             break
 
@@ -79,7 +80,7 @@ def supprimer_produit(produits_choisi,produit_supprimer): #chris
         else:
             print(f"{item} cela ne fait pas partie de vos produits")
 
-    return tps,tvq,prix_total
+
 
 if __name__ == "__main__":  # chris et fatoumata
     produits_choisi = []
