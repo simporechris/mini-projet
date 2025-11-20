@@ -37,11 +37,21 @@ sujet à changements
 
 
 
+fonction supprimer_produit(produits_client)
+    Tant que c'est vrai
+        Demandez à l'utilisateur d'entrez le nom du produit
+        si l'utilisateur tape Entrer
+            finsi
+        si le nom du produit est dans la liste des produits choisi
+            supprimer le produit
+            affichez le nom du produit supprimé
+        sinon
+            afficher vous n'avez pas choisi ce produit
+
+
+
+
 programme principal
-
-
-
-
 
 """
 

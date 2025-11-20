@@ -63,20 +63,21 @@ def calculer_reduction(produits_client, produits_disponibles):
             produits_avec_reduc[prod] = rabais_pfixe[i]
     return produits_avec_reduc
 
-def supprime_produit(produits_choisi):
-    item = input("* ")
-    if item == "supprimer":
-        element = produits_choisi(item)
-        del produits_choisi [element]
-    else:
-        item = ""
+def supprime_produit(produits_choisi): #chris
+    while True:
+        item = input("* ")
+        if item == "":
+            break
 
-        break
+        if item in produits_choisi:
+            produits_choisi.remove(item)
+            print(f" {item} a été supprimé")
+        else:
+            print(f"Vous n'avez pas choisi {item}")
 
 
 
-
-if __name__ == "__main__": #chris et fatoumata
+if __name__ == "__main__":  # chris et fatoumata
     produits_choisi = []
     print("Entrez vos produits (Taper 'Entrer' pour terminer")
     while True:
@@ -85,7 +86,7 @@ if __name__ == "__main__": #chris et fatoumata
             break
         produits_choisi.append(item)
 
-    print("Écrivez'supprimer' pour supprimer les produits")
+    print("Écrivez le nom du produit à supprimer ou taper 'Entrer' pour terminer")
     supprime_produit(produits_choisi)
 
 
