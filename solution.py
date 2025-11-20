@@ -17,8 +17,8 @@ produit = {
         "eau": 1.20,
         "coca-cola": 2.50,
         "chips": 1.80,
-        "sandwich jambon-beurre": 3.90,
-        "barre chocolatée": 1.50,
+        "sandwich": 3.90,
+        "kit-kat": 1.50,
         "café": 1.00,
         "lait": 1.30,
         "pain": 1.10,
@@ -31,6 +31,9 @@ produit = {
         "cigarettes": 9.50,
         "polar-pop": 0.99
 }
+for key, value in produit.items(): #.items() : lignes du dictionnaire
+    print(f"{key:<15} {value}$")
+
 #todo fatoumata:cree pour la fonction pour la taxe
 def calculer_taxe(sous_total,produits_choisi):#fatoumata
     """
@@ -63,7 +66,7 @@ def calculer_reduction(produits_client, produits_disponibles):
             produits_avec_reduc[prod] = rabais_pfixe[i]
     return produits_avec_reduc
 
-def supprime_produit(produits_choisi): #chris
+def supprimer_produit(produits_choisi): #chris
     while True:
         item = input("* ")
         if item == "":
