@@ -22,12 +22,12 @@ def test_solution2(produits_choisi,sous_total,resultat_attendu):
     #Assert
     assert resultat == resultat_attendu
 #Fred
-@pytest.mark.parametrize("produit_choisi,ls_prix,resultat_attendu")
+@pytest.mark.parametrize("produit_choisi,produit_disponible,resultat_attendu")
     
 liste_produits_rab = ["biscuit", "lait", "pain"]
     rabais_pfixe = [1.60, 0.99, 0.80]
-def test_calculer_reduction(produit_choisi,ls_prix)
+def test_calculer_reduction(produit_choisi,produit_disponible)
     #act
-    resultat = calculer_reduction(produit_choisi,ls_prix)
+    resultat = calculer_reduction(produit_choisi,produit_disponible)
     #assert
     assert resultat == resultat_attendu
