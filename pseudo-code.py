@@ -27,13 +27,13 @@ rabais_pfixe:liste de prix réduits pour les cirulaires qui vont remplacer les p
 
 sujet à changements
 
-    pour chaque prod dans produits_client:
-       si prod dans liste_produits_rab:
-          nouveau_prix = rabais_pfixe[prod]
-           ls_prix[prod] = nouveau_prix
+produits_avec_reduc égal produits_disponibles.copy()
+    pour i, prod dans énumération de (liste_produits_rab):
+        si prod est dans produits_client:
+            produits_avec_reduc[prod] va égaler rabais_pfixe[i]
+            
+    retourner produits_avec_reduc
 
-
-   retourner ls_prix
 
 
 
