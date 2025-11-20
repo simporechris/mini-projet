@@ -1,5 +1,5 @@
 import pytest
-from solution import calculer_taxe
+from solution import calculer_taxe, calculer_reduction
 
 
 #chris
@@ -21,4 +21,13 @@ def test_solution2(produits_choisi,sous_total,resultat_attendu):
     resultat = calculer_taxe(sous_total,produits_choisi)
     #Assert
     assert resultat == resultat_attendu
-
+#Fred
+@pytest.mark.parametrize("produit_choisi,ls_prix,resultat_attendu")
+    
+liste_produits_rab = ["biscuit", "lait", "pain"]
+    rabais_pfixe = [1.60, 0.99, 0.80]
+def test_calculer_reduction(produit_choisi,ls_prix)
+    #act
+    resultat = calculer_reduction(produit_choisi,ls_prix)
+    #assert
+    assert resultat == resultat_attendu
