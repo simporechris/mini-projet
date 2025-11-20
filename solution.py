@@ -90,7 +90,7 @@ if __name__ == "__main__":  # chris et fatoumata
         produits_choisi.append(item)
 
     print("Écrivez le nom du produit à supprimer ou taper 'Entrer' pour terminer")
-    supprime_produit(produits_choisi)
+    supprimer_produit(produits_choisi)
 
 
     print("=="*20)
