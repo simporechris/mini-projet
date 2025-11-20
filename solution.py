@@ -70,10 +70,10 @@ def calculer_reduction(produits_client, produits_disponibles):
 
 if __name__ == "__main__": #chris et fatoumata
     produits_choisi = []
-    print("Entrez vos produits (Taper ok pour terminer)")
+    print("Entrez vos produits (Taper 'Entrer' pour terminer)")
     while True:
         item = input("- ")
-        if item == "ok":
+        if item == "":
             break
         produits_choisi.append(item)
 
@@ -91,7 +91,8 @@ if __name__ == "__main__": #chris et fatoumata
             ls_prix.append(produit[items])
             print(f"{items:<20}          {produit[items]: .2f}$")
     except KeyError:
-        print("Ces articles sont indisponibles")
+
+        print("Ce produit n'existe pas")
 
     print("--" * 10)
     sous_total = definir_prix(produits_choisi, produit)
