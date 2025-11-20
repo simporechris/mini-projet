@@ -31,6 +31,7 @@ produit = {
         "cigarettes": 9.50,
         "polar-pop": 0.99
 }
+print("VOICI L'INVENTAIRE DU DÉPANEUR GO!")
 for key, value in produit.items(): #.items() : lignes du dictionnaire
     print(f"{key:<15} {value}$")
 
@@ -68,7 +69,7 @@ def calculer_reduction(produits_client, produits_disponibles):
 
 def supprimer_produit(produits_choisi): #chris
     while True:
-        item = input("* ")
+        item = input("* ").lower()
         if item == "":
             break
 
