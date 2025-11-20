@@ -79,7 +79,7 @@ def supprime_produit(produits_choisi): #chris
 
 if __name__ == "__main__":  # chris et fatoumata
     produits_choisi = []
-    print("Entrez vos produits (Taper 'Entrer' pour terminer")
+    print("Entrez vos produits (Taper 'Entrer' pour terminer)")
     while True:
         item = input("- ")
         if item == "":
