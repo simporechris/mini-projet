@@ -10,7 +10,7 @@ fonction calculer_taxe
     calculer le tps
     calculer le tvq
     calculer le prix total
-    retourner tps, tvq, prix_total
+    retourner le tps, le tvq et le prix total
 
 
 fonction Calculer_réduction(produits_client)

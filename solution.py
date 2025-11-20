@@ -91,7 +91,6 @@ if __name__ == "__main__": #chris et fatoumata
             ls_prix.append(produit[items])
             print(f"{items:<20}          {produit[items]: .2f}$")
     except KeyError:
-
         print("Ce produit n'existe pas")
 
     print("--" * 10)
