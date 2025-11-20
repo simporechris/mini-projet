@@ -73,7 +73,7 @@ def supprime_produit(produits_choisi): #chris
             produits_choisi.remove(item)
             print(f" {item} a été supprimé")
         else:
-            print(f"Vous n'avez pas choisi {item}")
+            print(f"{item} cela ne fait pas partie de vos produits")
 
 
 
@@ -81,7 +81,7 @@ if __name__ == "__main__":  # chris et fatoumata
     produits_choisi = []
     print("Entrez vos produits (Taper 'Entrer' pour terminer)")
     while True:
-        item = input("- ")
+        item = input("- ").lower()
         if item == "":
             break
         produits_choisi.append(item)
@@ -108,7 +108,7 @@ if __name__ == "__main__":  # chris et fatoumata
 
     print("--" * 10)
     sous_total = definir_prix(produits_choisi, produit)
-    calculer_reduction(produits_choisi,ls_prix)
+
     sous_total = sum(ls_prix)
     print(f"Sous-total :{sous_total:>23.2f}$")
     tps, tvq, prix_total = calculer_taxe(sous_total,produits_choisi)
