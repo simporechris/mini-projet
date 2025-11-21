@@ -68,6 +68,11 @@ def calculer_reduction(produits_client, produits_disponibles):
     return produits_avec_reduc
 
 def supprimer_produit(produits_choisi,produit_supprimer): #chris
+    """
+    :param produits_choisi: la liste de produits choisi par le client
+    :param produit_supprimer: la liste de produits supprimé par le client
+    :return:
+    """
     while True:
         item = input("* ").lower()
         produit_supprimer == item
@@ -80,7 +85,7 @@ def supprimer_produit(produits_choisi,produit_supprimer): #chris
         else:
             print(f"{item} cela ne fait pas partie de vos produits")
 
-
+    return produits_choisi
 
 if __name__ == "__main__":  # chris et fatoumata
     produits_choisi = []

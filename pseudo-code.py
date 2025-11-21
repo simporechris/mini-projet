@@ -47,6 +47,7 @@ fonction supprimer_produit(produits_client)
             affichez le nom du produit supprimé
         sinon
             afficher vous n'avez pas choisi ce produit
+    retourne la liste de produits restant
 
 
 
